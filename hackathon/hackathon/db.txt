@@ -1,0 +1,13 @@
+// Create a db in mySQL named ailogin
+
+CREATE DATABASE ailogin;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+with these columns. 
+
+make sure the folder hackathon is located in htdocs in the xampp folder

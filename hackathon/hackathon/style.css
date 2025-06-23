@@ -1,0 +1,232 @@
+.register-photo {
+    background:#f1f7fc;
+    padding:80px 0;
+  }
+  
+  .register-photo .image-holder {
+    display:table-cell;
+    width:auto;
+    background:url(../../assets/img/meeting.jpg);
+    background-size:cover;
+  }
+  
+  .register-photo .form-container {
+    display:table;
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .register-photo form {
+    display:table-cell;
+    width:400px;
+    background-color:#ffffff;
+    padding:40px 60px;
+    color:#505e6c;
+  }
+  
+  @media (max-width:991px) {
+    .register-photo form {
+      padding:40px;
+    }
+  }
+  
+
+
+
+  
+  .register-photo form .form-control {
+    background:#f7f9fc;
+    border:none;
+    border-bottom:1px solid #dfe7f1;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:6px;
+    height:40px;
+  }
+  
+  .register-photo form .form-check {
+    font-size:13px;
+    line-height:20px;
+  }
+  
+  .register-photo form .btn-primary {
+    background:#f4476b;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:35px;
+    text-shadow:none;
+    outline:none !important;
+  }
+  
+  .register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+    background:#eb3b60;
+  }
+  
+  .register-photo form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  .register-photo form .already {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+  }
+  
+  .image-holder img {
+    width: 100%;
+    height: 600px; /* Or whatever height you want */
+    object-fit: cover; /* This will crop the image to fill the space */
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#textbox {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-block {
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #ff4b5c;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #f7b731;
+    border: none;
+}
+
+.btn-danger:hover, .btn-warning:hover {
+    transform: scale(1.1);
+}
+
+#microphone-icon {
+    font-size: 3rem;
+    color: #ff4b5c;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+#microphone-icon.listening {
+    color: #28a745;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#instructions {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+nav.text-left a{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+nav.text-left:hover a {
+    transform: scale(1.05);
+}
+
+h3 a{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f7b731;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Adding a subtitle for context */
+.subtitle a{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/* Styling for responsiveness */
+@media (max-width: 768px) {
+    nav.text-left  a{
+        top: 20px;
+        left: 20px;
+        padding: 15px;
+    }
+
+    h3 a{
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
